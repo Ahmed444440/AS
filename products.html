@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Al Soltan">
+    <link rel="icon" type="image/x-icon" href="./assets/img/logo.png">
+    <title>Al Soltan</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header class="header-area">
+        <div class="desktop-nav d-none d-lg-block">
+            <div class="header-nav">
+                <div class="container-fluid custom-container">
+                    <!-- <div class="toast show header-nav-wrapper align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
+                        <div class="d-flex">
+                          <div class="toast-body">
+                            شحن لجميع محافظات مصر
+                          </div>
+                          <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+                        </div>
+                      </div> -->
+                </div> <!-- container -->
+            </div> 
+            <!-- header nav -->
+
+            <div class="header-middle">
+                <div class="container-fluid custom-container">
+                    <div class="row">
+                        <div class="col-lg-2 col-xxl-2">
+                            <div class="header-logo-contact">
+                                <div class="desktop-logo">
+                                    <a href="./index.html">
+                                        <img src="./assets/img/logo.png" alt="Logo">
+                                    </a>
+                                </div> <!-- desktop logo -->
+                            </div>
+                        </div>
+                        <div class="col-lg-10 col-xxl-10">
+                            <div class="header-search-cart d-flex align-items-center">
+                                <div class="header-search">
+                                    <form id="searchForm" class="search-form"
+                                        action="" method="GET">
+                                        <div class="search-category">
+                                            <select name="category" id="category_select" class="categoris" required>
+                                                <option value="">كل الفئات</option>
+                                                <option value="المنتجات"> المنتجات</option>
+                                                <option value="تورت"> تورت</option>
+                                            </select>
+                                        </div>
+                                        <input type="text" class="search-type" id="prod_name" name="search"
+                                            placeholder="بحث عن منتج" value="" autocomplete="on">
+                                         <button><i class="icon fas fa-search"></i></button>
+                                    </form>
+                                    <div class="autocomplete search-suggestion">
+                                        <div id="myInputautocomplete-list" class="autocomplete-items">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="header-cart dropdown">
+
+                                    
+                                    <!--  mini cart -->
+                                </div>
+                                <div class="header-cart dropdown">
+
+                                    <li class="onhover-dropdown cart-dropdown">
+                                        <div id="cart-items">
+                                            <div class="header-widget-group"><button
+                                                    class="header-widget header-cart" title="Cartlist"><i
+                                                        class="fas fa-shopping-basket"></i><sup>9+</sup><span>المجموع 
+                                                        <small>L.E 345.00</small></span></button></div>
+                                          
+                                        </div>
+                                    </li>
+
+                                    <!--  mini cart -->
+                                </div>
+                                <div class="header-cart dropdown header-menu-nav">
+                                    <ul class="menu-nav">
+                                        <li>
+                                            <div class="dropdown">
+                                                <button type="button" id="setting" data-bs-toggle="dropdown">لوحة <i class="fas fa-user"></i> <i class="icon fas fa-chevron-down"></i></button>
+        
+                                                 <ul class="dropdown-menu" aria-labelledby="setting">
+                                                    <li><a href="myaccount.html">حسابي</a></li>
+                                                    <li><a href="rigester.html">تسجيل الدخول</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="dropdown">
+                                                <button type="button" id="langue" data-bs-toggle="dropdown"><img src="assets/images/flag/1.jpg" alt=""> إنجليزي <i class="icon fas fa-chevron-down"></i></button>
+        
+                                                <ul class="dropdown-menu" aria-labelledby="langue">
+                                                    <li><a href="#"><img src="assets/images/flag/1.jpg" alt=""> إنجليزي</a></li>
+                                                    <li><a href="#"><img src="assets/images/flag/2.jpg" alt=""> عربي</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div> <!-- header menu nav -->
+                            </div> <!-- header search cart -->
+                        </div>
+                    </div> <!-- row -->
+                </div> <!-- container -->
+            </div> <!-- header middle -->
+
+            <div class="header-menu">
+                <div class="container-fluid custom-container">
+                    <div class="row align-items-center">
+
+
+                        <div class="col-lg-12 position-static">
+                            <div class="header-horizontal-menu">
+                                <ul class="menu-content">
+                                    <li class="active"><a href="./index.html">Home</a></li> 
+                                    <li><a href="about.html">About  </a></li>
+                                    <li><a href="contact.html">contact Us</a></li>               
+                                    <li> <a href="Maintenance.html"> Maintenance</a></li>
+                                <li class="has-submenu">
+                                    <a href="products.html">Prodcut <i class="fas fa-chevron-down"></i></a>
+                                    <!-- Submenu -->
+                                    <ul class="sub-menu">
+                                        <li><a href="single-product.html">cnc</a></li>
+                                        <li><a href="single-product.html">cnc</a></li>
+                                        <li><a href="single-product.html">cnc</a></li>                                     
+                                    </ul>
+                                </li>
+                                    
+                                </ul>
+                            
+                            </div> <!-- header horizontal menu -->
+                        </div>
+                    </div> <!-- row -->
+                </div> <!-- container -->
+            </div> <!-- header menu -->
+        </div> <!-- desktop nav -->
+
+        <div class="mobile-nav d-lg-none">
+            <div class="container-fluid">
+                <div class="mobile-nav-top">
+                    <div class="row align-items-center">
+                        <div class="col-sm-4 col-3">
+                            <div class="mobile-toggle">
+                                <button class="toggle" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMobile"><i
+                                        class="fas fa-bars"></i></button>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-5">
+                            <div class="mobile-logo text-center">
+                                <a href="./index.html">
+                                    <img src="./assets/img/logo.png" alt="Logo">
+                                </a>
+                            </div> <!-- mobile logo -->
+                        </div>
+                        <div class="col-sm-4  col-4">
+                            <div class="mobile-account-cart">
+                                <ul class="account-cart text-end">
+                                    <li>
+                                        <div class="dropdown">
+                                            <button type="button" data-bs-toggle="dropdown"><i
+                                                    class="fas fa-user"></i></button>
+
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <li>
+                                                    <a href="myaccount.html"> تسجيل الدخول</a>
+                                                </li>
+                                                <li>
+                                                    <a href="rigester.html">تسجيل حساب
+                                                        جديد</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="header-cart">
+                                        <a href="https://treecorefurniture.com/ar/carts">
+                                            <i class="fas fa-shopping-cart"></i>
+                                            <span>0</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> <!-- row -->
+                </div> <!-- mobile nav top -->
+
+
+                <div class="header-search">
+                    <form id="searchForm" class="search-form" action=""
+                        method="GET">
+                        <div class="search-category">
+                            <select name="category" id="category_select" class="categoris" required>
+                                <option value="">كل الفئات</option>
+
+                                <option value="المنتجات"> المنتجات</option>                                <option value="تورت"> تورت</option>
+
+
+                            </select>
+                        </div>
+                        <input type="text" class="search-type" id="prod_name" name="search" placeholder="بحث عن منتج"
+                            value="" autocomplete="on">
+                        <!--     <input type="text"  placeholder="أدخل مفتاح البحث الخاص بك ... ">-->
+                        <button><i class="icon fas fa-search"></i></button>
+                    </form>
+                    <div class="autocomplete search-suggestion">
+                        <div id="myInputautocomplete-list" class="autocomplete-items">
+                        </div>
+                    </div>
+                </div>
+
+            </div> <!-- container -->
+        </div> <!-- mobile nav -->
+
+        <div class="offcanvas offcanvas-start" id="offcanvasMobile">
+
+            <div class="mobile-canvas-menu-top">
+                <ul class="menu-nav">
+                    <!--   <li><a href="compare.html"><i class="fas fa-repeat"></i> قارن (0)</a></li>-->
+                    
+                </ul>
+                <ul class="mobile-canvas">
+                    <li>
+                        <div class="dropdown dropdown-mobile menu-item-has-children"><span class="menu-expand"></span>
+                            <button class="dm-toggle" type="button"><img src="assets/img/lang/2.webp" alt="flag"> عربى <i
+                                    class="icon fas fa-chevron-down"></i></button>
+
+                            <ul class="dropdown-menu" style="display: none;">
+                                <li><a href="#"><img
+                                            src="assets/img/lang/1.jpg" alt="flag"> English</a></li>
+                                <li><a href="#"><img
+                                            src="assets/img/lang/2.webp" alt="flag"> عربى</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div> <!-- mobile canvas menu -->
+
+            <div class="mobile-canvas-close">
+                <p>القائمة </p>
+                <button data-bs-dismiss="offcanvas"><i class="fas fa-arrow-left"></i></button>
+            </div>
+
+            <div class="mobile-main-menu">
+                <ul class="menu-content">
+                    <li class="active"><a href="./index.html">home</a></li>                
+
+                    <li> <a href="about.html">
+             About</a>
+
+                </li>
+                <li class="has-submenu">
+                    <a href="#" class="dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#submenu-products">
+                        Product <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul id="submenu-products" class="collapse">
+                        <li><a href="single-product.html">cnc</a></li>
+                        <li><a href="single-product.html">cnc</a></li>
+                        <li><a href="single-product.html">cnc</a></li>  
+                    </ul>
+                </li>  
+                    <li><a href="./contact.html"> Contact Us </a></li>
+                </ul>
+
+
+                <!-- menu content -->
+            </div> <!-- mobile main menu -->
+        </div>
+
+    </header>
+    <div class="cart-sidebar-wrappper">
+        <div class="main-cart-sidebar">
+            <div class="cart-top">
+                <div class="cart-close-icon">
+                    <i class="fas fa-close"></i>
+                </div>
+                <ul class="cart-product-grid">
+                    <li class="single-cart-product">
+                        <div class="cart-product-info d-flex align-items-center">
+                            <div class="product-img"><img
+                                    src="assets/img/1.jpg"
+                                    alt="cartimg" class="img-fluid"></div>
+                            <div class="product-info">
+                                <a href="single-product.html">
+                                    <h5 class="product-title"> تورت</h5>
+                                </a>
+                                <ul class="product-rating d-flex">
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star-half-alt"></i></li>
+                                </ul>
+                                <p class="product-price"><span>1</span>x <span class="p-price">$10.32</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="cart-product-delete-btn">
+                            <a href="javascript:void(0)"><i class="fas fa-close"></i></a>
+                        </div>
+                    </li>
+                    <li class="single-cart-product">
+                        <div class="cart-product-info d-flex align-items-center">
+                            <div class="product-img"><img
+                                    src="assets/img/2.jpg"
+                                    alt="cartimg" class="img-fluid"></div>
+                            <div class="product-info">
+                                <a href="single-product.html">
+                                    <h5 class="product-title">حلويات غربيه</h5>
+                                </a>
+                                <ul class="product-rating d-flex">
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star-half-alt"></i></li>
+                                </ul>
+                                <p class="product-price"><span>1</span>x <span class="p-price">$10.32</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="cart-product-delete-btn">
+                            <a href="javascript:void(0)"><i class="fas fa-close"></i></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="cart-bottom">
+                <div class="cart-total d-flex justify-content-between">
+                    <label>المجموع الفرعي : </label>
+                    <span>$64.08</span>
+                </div>
+                <div class="cart-btns">
+                    <a href="checkout.html" class="cart-btn checkout">فحص العربه</a>
+                    <a href="cart.html" class="cart-btn cart">أفتح السلة</a>
+                </div>
+                <p class="cart-shipping-text"><strong>شحن :</strong> استمر في التسوق حتى $ 64.08 واستلم
+                    حر
+                    شحن. ابقى مع EG </p>
+            </div>
+        </div>
+    </div>
+<!-- Deal Box Modal Start -->
+<div class="modal fade theme-modal deal-modal" id="deal-box" tabindex="-1" aria-labelledby="exampleModalLabel"
+aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
+    <div class="modal-content">
+        <div class="modal-header">
+            <div>
+                <h5 class="modal-title w-100" id="deal_today">عروض اليوم</h5>
+                <p class="mt-1 text-content">عروض مقترحة</p>
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div class="deal-offer-box">
+                <ul class="deal-offer-list">
+                    <li class="list-1">
+                        <div class="deal-offer-contain">
+                            <a href="single-product.html" class="deal-image">
+                                <img src="assets/img/3.jpg" class="blur-up lazyload"
+                                    alt="">
+                            </a>
+
+                            <a href="single-product.html" class="deal-contain">
+                                <h5>Blended Instant Coffee 50 g Buy 1 Get 1 Free</h5>
+                                <h6>$52.57 <del>57.62</del> <span>500 G</span></h6>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="list-2">
+                        <div class="deal-offer-contain">
+                            <a href="single-product.html" class="deal-image">
+                                <img src="assets/img/2.jpg" class="blur-up lazyload"
+                                    alt="">
+                            </a>
+
+                            <a href="single-product.html" class="deal-contain">
+                                <h5>Blended Instant Coffee 50 g Buy 1 Get 1 Free</h5>
+                                <h6>$52.57 <del>57.62</del> <span>500 G</span></h6>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="list-3">
+                        <div class="deal-offer-contain">
+                            <a href="single-product.html" class="deal-image">
+                                <img src="assets/img/1.jpg" class="blur-up lazyload"
+                                    alt="">
+                            </a>
+
+                            <a href="single-product.html" class="deal-contain">
+                                <h5>Blended Instant Coffee 50 g Buy 1 Get 1 Free</h5>
+                                <h6>$52.57 <del>57.62</del> <span>500 G</span></h6>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="list-1">
+                        <div class="deal-offer-contain">
+                            <a href="single-product.html" class="deal-image">
+                                <img src="assets/img/3.jpg" class="blur-up lazyload"
+                                    alt="">
+                            </a>
+
+                            <a href="single-product.html" class="deal-contain">
+                                <h5>Blended Instant Coffee 50 g Buy 1 Get 1 Free</h5>
+                                <h6>$52.57 <del>57.62</del> <span>500 G</span></h6>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- Deal Box Modal End -->
+
+    
+<section class="breadcrumb-section">
+    <nav aria-label="breadcrumb">
+      <ol class="custom-breadcrumb">
+        <li class="custom-breadcrumb-item"><a href="#">الرئيسية</a></li>
+        <li class="custom-breadcrumb-item"><a href="#"></a></li>
+        <li class="custom-breadcrumb-item active" aria-current="page"></li>
+      </ol>
+    </nav>
+  </section>
+  
+  
+    <div class="recent-product-wrapper pt-5 mb-4">
+        
+        <div class="container-fluid custom-container">
+            <div class="row">
+                <div class="col-lg-12 mb-25">
+                    <div class="section-title text-center pb-30">
+                        <h2 class="title">جميع الأقسام</h2>
+                    </div>
+                </div>
+                <div class="col-xxl-3 col-xl-4 col-lg-4" >
+                    <div class="product-sidebar">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="sidebar-searchbar-wrap">
+                                    <form action="#" method="POST" class="sidebar-searchbar-form">
+                                        <input type="text" name="sidebar-search-input" id="sidebar-search-input"
+                                            placeholder="ما الذي تبحث عنه؟">
+                                        <button type="submit"><i class="fas fa-search"></i></button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="sidebar-category">
+                                    <h5 class="sb-title">تسوق حسب الفئة</h5>
+                                    <div class="sb-category-dropdown">
+                                        <div class="accordion" id="accordionExample">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingOne">
+                                                    <button class="accordion-button" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                                        aria-expanded="true" aria-controls="collapseOne">
+                                                        Products                                                   </button>
+                                                </h2>
+                                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                                    aria-labelledby="headingOne"
+                                                    data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <ul class="sb-category-list">
+                                                            <li><a href="products.html">Metal Industry </a>
+                                                                <span class="product-amount">(15)</span></li>
+                                                            <li><a href="products.html">Wood Industry </a>
+                                                                <span class="product-amount">(10)</span></li>
+                                                            <li><a href="products.html">Advertising and Signage </a> <span
+                                                                    class="product-amount">(5)</span></li>
+                                                            <li><a href="#"> Marble and Stone Industry</a> <span
+                                                                    class="product-amount">(55)</span></li>
+                                                        
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingTwo">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                        aria-expanded="false" aria-controls="collapseTwo">
+                                                        Spare Parts                                                  </button>
+                                                </h2>
+                                                <div id="collapseTwo" class="accordion-collapse collapse"
+                                                    aria-labelledby="headingTwo"
+                                                    data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <ul class="sb-category-list">
+                                                            <li><a href="#"> </a> <span
+                                                                    class="product-amount"></span></li>
+                                                            <li><a href="#"></a> <span
+                                                                    class="product-amount"></span></li>
+                                                            <li><a href="#"> </a> <span
+                                                                    class="product-amount"></span></li>
+                                                            <li><a href="#"> </a> <span
+                                                                    class="product-amount"></span></li>
+                                                            <li><a href="#"> </a>
+                                                                <span class="product-amount"></span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                           
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 ">
+                                <div class="sb-pricing-range">
+                                    <h5 class="sb-title">السعر</h5>
+                                    <form action="#" method="POST">
+                                        <div class="price-range-slider">
+                                            <div id="slider-range" class="range-bar"></div>
+                                            <div class="pricing-range-buttom d-flex align-items-center justify-content-between">
+                                                <div class="price-filter-btn">
+                                                    <button type="submit" class="btn btn-success">فلتر </button>
+                                                </div>
+                                                <div class="pricing-value">
+                                                    <span>السعر : </span>
+                                                    <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            
+                            
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-9 col-xl-8 col-lg-8">
+                    <div class="row category-slider1 white-arrow category-arrow">
+
+                        <div class="col-xxl-3 xol-xl-3 col-lg-4 col-md-4 col-sm-6">
+                            <div class="prod-item2 prod-card">
+                                <div class="badge-area">
+                                    <span class="eg-badge black--badge">متوفر</span>
+                                </div>
+                                <ul class="cart-icon-list">
+                                   
+                                    <li><a href="single-product.html"><i class="fas fa-eye"></i></a></li>
+                                </ul>
+                                <div class="prod-image text-center">
+                                    <img src="assets/img/products/9.png" alt="">
+                                </div>
+                                <div class="prod-content">
+                                    <a href="single-product.html" class="prod-title">بلازما بروتارى</a>
+                                    <!-- <h5 class="prod-price"><span> <del>L.E24/ kG</del> </span> L.E20/ kG</h5> -->
+                                    <a href="#" class="eg-btn btn--capsule btn-white-sea">أضف الي السلة</a>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="col-xxl-3 xol-xl-3 col-lg-4 col-md-4 col-sm-6">
+                            <div class="prod-item2 prod-card">
+                                <div class="badge-area">
+                                    <span class="eg-badge black--badge">متوفر</span>
+                                </div>
+                                <ul class="cart-icon-list">
+                                   
+                                    <li><a href="single-product.html"><i class="fas fa-eye"></i></a></li>
+                                </ul>
+                                <div class="prod-image text-center">
+                                    <img src="assets/img/products/9.png" alt="">
+                                </div>
+                                <div class="prod-content">
+                                    <a href="single-product.html" class="prod-title">بلازما بروتارى</a>
+                                    <!-- <h5 class="prod-price"><span> <del>L.E24/ kG</del> </span> L.E20/ kG</h5> -->
+                                    <a href="#" class="eg-btn btn--capsule btn-white-sea">أضف الي السلة</a>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="col-xxl-3 xol-xl-3 col-lg-4 col-md-4 col-sm-6">
+                            <div class="prod-item2 prod-card">
+                                <div class="badge-area">
+                                    <span class="eg-badge black--badge">متوفر</span>
+                                </div>
+                                <ul class="cart-icon-list">
+                                   
+                                    <li><a href="single-product.html"><i class="fas fa-eye"></i></a></li>
+                                </ul>
+                                <div class="prod-image text-center">
+                                    <img src="assets/img/products/9.png" alt="">
+                                </div>
+                                <div class="prod-content">
+                                    <a href="single-product.html" class="prod-title">بلازما بروتارى</a>
+                                    <!-- <h5 class="prod-price"><span> <del>L.E24/ kG</del> </span> L.E20/ kG</h5> -->
+                                    <a href="#" class="eg-btn btn--capsule btn-white-sea">أضف الي السلة</a>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="col-xxl-3 xol-xl-3 col-lg-4 col-md-4 col-sm-6">
+                            <div class="prod-item2 prod-card">
+                                <div class="badge-area">
+                                    <span class="eg-badge black--badge">متوفر</span>
+                                </div>
+                                <ul class="cart-icon-list">
+                                   
+                                    <li><a href="single-product.html"><i class="fas fa-eye"></i></a></li>
+                                </ul>
+                                <div class="prod-image text-center">
+                                    <img src="assets/img/products/9.png" alt="">
+                                </div>
+                                <div class="prod-content">
+                                    <a href="single-product.html" class="prod-title">بلازما بروتارى</a>
+                                    <!-- <h5 class="prod-price"><span> <del>L.E24/ kG</del> </span> L.E20/ kG</h5> -->
+                                    <a href="#" class="eg-btn btn--capsule btn-white-sea">أضف الي السلة</a>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="col-xxl-3 xol-xl-3 col-lg-4 col-md-4 col-sm-6">
+                            <div class="prod-item2 prod-card">
+                                <div class="badge-area">
+                                    <span class="eg-badge black--badge">متوفر</span>
+                                </div>
+                                <ul class="cart-icon-list">
+                                   
+                                    <li><a href="single-product.html"><i class="fas fa-eye"></i></a></li>
+                                </ul>
+                                <div class="prod-image text-center">
+                                    <img src="assets/img/products/9.png" alt="">
+                                </div>
+                                <div class="prod-content">
+                                    <a href="single-product.html" class="prod-title">بلازما بروتارى</a>
+                                    <!-- <h5 class="prod-price"><span> <del>L.E24/ kG</del> </span> L.E20/ kG</h5> -->
+                                    <a href="#" class="eg-btn btn--capsule btn-white-sea">أضف الي السلة</a>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="col-xxl-3 xol-xl-3 col-lg-4 col-md-4 col-sm-6">
+                            <div class="prod-item2 prod-card">
+                                <div class="badge-area">
+                                    <span class="eg-badge black--badge">متوفر</span>
+                                </div>
+                                <ul class="cart-icon-list">
+                                   
+                                    <li><a href="single-product.html"><i class="fas fa-eye"></i></a></li>
+                                </ul>
+                                <div class="prod-image text-center">
+                                    <img src="assets/img/products/9.png" alt="">
+                                </div>
+                                <div class="prod-content">
+                                    <a href="single-product.html" class="prod-title">بلازما بروتارى</a>
+                                    <!-- <h5 class="prod-price"><span> <del>L.E24/ kG</del> </span> L.E20/ kG</h5> -->
+                                    <a href="#" class="eg-btn btn--capsule btn-white-sea">أضف الي السلة</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 xol-xl-3 col-lg-4 col-md-4 col-sm-6">
+                            <div class="prod-item2 prod-card">
+                                <div class="badge-area">
+                                    <span class="eg-badge black--badge">متوفر</span>
+                                </div>
+                                <ul class="cart-icon-list">
+                                   
+                                    <li><a href="single-product.html"><i class="fas fa-eye"></i></a></li>
+                                </ul>
+                                <div class="prod-image text-center">
+                                    <img src="assets/img/products/9.png" alt="">
+                                </div>
+                                <div class="prod-content">
+                                    <a href="single-product.html" class="prod-title">بلازما بروتارى</a>
+                                    <!-- <h5 class="prod-price"><span> <del>L.E24/ kG</del> </span> L.E20/ kG</h5> -->
+                                    <a href="#" class="eg-btn btn--capsule btn-white-sea">أضف الي السلة</a>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="col-xxl-3 xol-xl-3 col-lg-4 col-md-4 col-sm-6">
+                            <div class="prod-item2 prod-card">
+                                <div class="badge-area">
+                                    <span class="eg-badge black--badge">متوفر</span>
+                                </div>
+                                <ul class="cart-icon-list">
+                                   
+                                    <li><a href="single-product.html"><i class="fas fa-eye"></i></a></li>
+                                </ul>
+                                <div class="prod-image text-center">
+                                    <img src="assets/img/products/9.png" alt="">
+                                </div>
+                                <div class="prod-content">
+                                    <a href="single-product.html" class="prod-title">بلازما بروتارى</a>
+                                    <!-- <h5 class="prod-price"><span> <del>L.E24/ kG</del> </span> L.E20/ kG</h5> -->
+                                    <a href="#" class="eg-btn btn--capsule btn-white-sea">أضف الي السلة</a>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="col-xxl-3 xol-xl-3 col-lg-4 col-md-4 col-sm-6">
+                            <div class="prod-item2 prod-card">
+                                <div class="badge-area">
+                                    <span class="eg-badge black--badge">متوفر</span>
+                                </div>
+                                <ul class="cart-icon-list">
+                                   
+                                    <li><a href="single-product.html"><i class="fas fa-eye"></i></a></li>
+                                </ul>
+                                <div class="prod-image text-center">
+                                    <img src="assets/img/products/9.png" alt="">
+                                </div>
+                                <div class="prod-content">
+                                    <a href="single-product.html" class="prod-title">بلازما بروتارى</a>
+                                    <!-- <h5 class="prod-price"><span> <del>L.E24/ kG</del> </span> L.E20/ kG</h5> -->
+                                    <a href="#" class="eg-btn btn--capsule btn-white-sea">أضف الي السلة</a>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="col-xxl-3 xol-xl-3 col-lg-4 col-md-4 col-sm-6">
+                            <div class="prod-item2 prod-card">
+                                <div class="badge-area">
+                                    <span class="eg-badge black--badge">متوفر</span>
+                                </div>
+                                <ul class="cart-icon-list">
+                                   
+                                    <li><a href="single-product.html"><i class="fas fa-eye"></i></a></li>
+                                </ul>
+                                <div class="prod-image text-center">
+                                    <img src="assets/img/products/9.png" alt="">
+                                </div>
+                                <div class="prod-content">
+                                    <a href="single-product.html" class="prod-title">بلازما بروتارى</a>
+                                    <!-- <h5 class="prod-price"><span> <del>L.E24/ kG</del> </span> L.E20/ kG</h5> -->
+                                    <a href="#" class="eg-btn btn--capsule btn-white-sea">أضف الي السلة</a>
+                                </div>
+                            </div>
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+      <footer class="footer-area footer-design-1 ml-130">
+        <div class="container">
+            <div class="row ">
+                <div class="col-xl-12 col-lg-12 col-sm-12 col-12">
+                    <div class="footer-wrap">
+                        <div class="row justify-content-between gy-5">
+                            <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
+                                <div class="single-widget">
+                                    <div class="footer-title">
+                                        <h3>معلومات التواصل</h3>
+                                    </div>
+             
+                                    <div class="footer-address">
+                                        <ul>
+                                            <li>
+                                                <i class="fas fa-phone-volume"></i>
+                                                <span><a href="tel:123456781233">+1234 5678 1233</a> <br> <a
+                                                        href="tel:123445651343">+1234 4565 1343</a></span>
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-envelope"></i>
+                                                <span><a href="mailto:info@alsoltan.com">info@alsoltan.com</a> <br><a
+                                                        href="mailto:info@alsoltan.com">support@alsoltan.com</a></span>
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-map-marker-alt"></i>
+                                                <span>3102 Bartlett Avenue <br> Southfield, MI 48075</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-5 col-lg-6 col-md-12 col-sm-12 col-12">
+                                <div class="single-widget text-lg-center">
+                                    <div class="footer-logo">
+                                        <a href="index.html"><img src="assets/img/logo.png" alt=""></a>
+                                        <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها.
+                                        </p>
+                                    </div>
+                                    <!-- <div class="form-design form-design-1">
+                                        <form action="index.html">
+                                            <input type="text" placeholder="Your Email">
+                                            <button class="bg--sea-green">Send</button>
+                                        </form>
+                                    </div> -->
+                                    <div class="footer-social pt-50">
+                                        <ul>
+                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-2 col-md-12 col-sm-12 col-12">
+                                <div class="single-widget">
+                                    <div class="footer-title">
+                                        <h3>مساعدة و دعم
+                                            </h3>
+                                    </div>
+                                    <div class="footer-link">
+                                        <ul>
+                                            <li><a href="#">سياسه الاسترجاع</a></li>
+                                            <li><a href="#">الشروط والاحكام </a></li>
+                                            <li><a href="#">دعمنا</a></li>
+                                            <li><a href="#">شروط و خدمة</a></li>
+                                            <li><a href="#">الدفع</a></li>
+                                            <li><a href="#">حالات أخرى</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-3 copy-right-section align-items-center">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                    <div class="footer-card-support text-lg-end text-center">
+                        <ul>
+                            <li><a href="#"><img src="assets/img/payonert.svg" alt=""></a></li>
+                            <li><a href="#"><img src="assets/img/paypal.svg" alt=""></a></li>
+                            <li><a href="#"><img src="assets/img/visa.svg" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 text-lg-start text-center">
+                    <div class="copy-right-area ">
+                        <p class="copy-text">Copyright 2023 alsoltan | created By <a href="https://cangrowonline.com/"> CanGrowonline</a></p>
+                    </div>
+                </div>
+             
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js"
+   integrity="sha512-tWHlutFnuG0C6nQRlpvrEhE4QpkG1nn2MOUMWmUeRePl4e3Aki0VB6W1v3oLjFtd0hVOtRQ9PHpSfN6u6/QXkQ=="
+   crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+   integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+   integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/3.0.0-rc3/lazysizes.min.js" integrity="sha512-HMnm5Dp1stoEycrUKuMyGDHIudidstU6uRwRgRxPbl2jNxU9xS2B0XLon7xowk3ZitrjNw7WIbQwXroIwY33sw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js" integrity="sha512-vKtlh10whXT2NhAshnxhceCdwq/bMyMrfeZ3p2IaF89qGCwbC94ATb7Qyg8cFs8EL3Hgz9bJBF++ZWfKn4ligg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="assets/js/script.js"></script>   
+</body>
+</html>
