@@ -2963,6 +2963,7 @@ header .cart-btn .btn {
     font-weight: 600;
     color: rgb(0, 21, 43);
     margin-bottom: 20px !important;
+    display: block;
 }
 
 .prod-item2 .prod-content .prod-price {
