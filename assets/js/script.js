@@ -16,7 +16,7 @@ $(function ($) {
     });
 
     var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 4,
+      slidesPerView: 5,
       spaceBetween: 30,
       freeMode: true,
       pagination: {

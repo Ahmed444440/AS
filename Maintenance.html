@@ -31,72 +31,82 @@
 
             <div class="header-middle">
                 <div class="container-fluid custom-container">
-                    <div class="row d-flex justify-content-between align-items-center">
-                        <div class="col-lg-5 col-xxl-5">
-                            <div class="header-menu-nav d-flex align-items-center">
-                                <ul class="menu-nav d-flex align-items-center">
-                                    <li>
-                                        <div class="dropdown">
-                                            <button type="button" id="lang" data-bs-toggle="dropdown">
-                                                الانجليزي<i class="icon fas fa-chevron-down"></i>
-                                            </button>
-                                            <ul class="dropdown-menu" aria-labelledby="lang">
-                                                <li><a href="">العربيه</a></li>
-                                                <li><a href="">الانجليزي </a></li>
-                                            </ul>
+                    <div class="row">
+                        <div class="col-lg-2 col-xxl-2">
+                            <div class="header-logo-contact">
+                                <div class="desktop-logo">
+                                    <a href="./index.html">
+                                        <img src="./assets/img/logo.PNG" alt="Logo">
+                                    </a>
+                                </div> <!-- desktop logo -->
+                            </div>
+                        </div>
+                        <div class="col-lg-10 col-xxl-10">
+                            <div class="header-search-cart d-flex align-items-center">
+                                <div class="header-search">
+                                    <form id="searchForm" class="search-form"
+                                        action="" method="GET">
+                                        <div class="search-category">
+                                            <select name="category" id="category_select" class="categoris" required>
+                                                <option value="">كل الفئات</option>
+                                                <option value="المنتجات"> المنتجات</option>
+                                                <option value="تورت"> تورت</option>
+                                            </select>
                                         </div>
-                                    </li>
-                                    <div class="header-search">
+                                        <input type="text" class="search-type" id="prod_name" name="search"
+                                            placeholder="بحث عن منتج" value="" autocomplete="on">
+                                         <button><i class="icon fas fa-search"></i></button>
+                                    </form>
                                     <div class="autocomplete search-suggestion">
                                         <div id="myInputautocomplete-list" class="autocomplete-items">
                                         </div>
                                     </div>
                                 </div>
-                                </ul>
-                            </div>
-                          
-                        </div>
-                    
-                        <div class="col-lg-2 col-xxl-2 d-flex justify-content-center">
-                            <div class="header-logo-contact">
-                                <div class="desktop-logo">
-                                    <a href="./index.html">
-                                        <img src="assets/img/logo.PNG" alt="Logo">
-                                    </a>
+                                <div class="header-cart dropdown">
+
+                                    
+                                    <!--  mini cart -->
                                 </div>
-                            </div>
-                        </div>
-                    
-                        <div class="col-lg-5 col-xxl-5 d-flex justify-content-end">
-                            <div class="header-cart dropdown">
-                                <li class="onhover-dropdown cart-dropdown">
-                                    <div id="cart-items">
-                                        <div class="header-widget-group">
-                                        
-                                            <button class="header-widget header-cart" title="Cartlist">
-                                                <i class="fas fa-cart-plus"></i><sup>9+</sup>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </li>
-                            </div>
-                            <div class="header-cart dropdown header-menu-nav">
-                                <ul class="menu-nav">
-                                    <li>
-                                        <div class="dropdown">
-                                            <button type="button" id="setting" data-bs-toggle="dropdown">
-                                                <i class="fas fa-user"></i> <i class="icon fas fa-chevron-down"></i>
-                                            </button>
-                                            <ul class="dropdown-menu" aria-labelledby="setting">
-                                                <li><a href="myaccount.html">حسابي</a></li>
-                                                <li><a href="rigester.html">تسجيل الدخول</a></li>
-                                            </ul>
+                                <div class="header-cart dropdown">
+
+                                    <li class="onhover-dropdown cart-dropdown">
+                                        <div id="cart-items">
+                                            <div class="header-widget-group"><button
+                                                    class="header-widget header-cart" title="Cartlist"><i
+                                                        class="fas fa-shopping-basket"></i><sup>9+</sup></button></div>
+                                          
                                         </div>
                                     </li>
-                                </ul>
-                            </div>
+
+                                    <!--  mini cart -->
+                                </div>
+                                <div class="header-cart dropdown header-menu-nav">
+                                    <ul class="menu-nav">
+                                        <li>
+                                            <div class="dropdown">
+                                                <button type="button" id="setting" data-bs-toggle="dropdown">لوحة <i class="fas fa-user"></i> <i class="icon fas fa-chevron-down"></i></button>
+        
+                                                 <ul class="dropdown-menu" aria-labelledby="setting">
+                                                    <li><a href="myaccount.html">حسابي</a></li>
+                                                    <li><a href="rigester.html">تسجيل الدخول</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="dropdown">
+                                                <button type="button" id="langue" data-bs-toggle="dropdown"><img src="assets/images/flag/1.jpg" alt=""> إنجليزي <i class="icon fas fa-chevron-down"></i></button>
+        
+                                                <ul class="dropdown-menu" aria-labelledby="langue">
+                                                    <li><a href="#"><img src="assets/images/flag/1.jpg" alt=""> إنجليزي</a></li>
+                                                    <li><a href="#"><img src="assets/images/flag/2.jpg" alt=""> عربي</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div> <!-- header menu nav -->
+                            </div> <!-- header search cart -->
                         </div>
-                    </div>
+                    </div> <!-- row -->
                 </div> <!-- container -->
             </div> <!-- header middle -->
 
@@ -111,7 +121,8 @@
                                     <li><a href="service.html">Service  </a></li>
                                     <li><a href="contact.html">contact Us</a></li>               
                                     <li> <a href="Maintenance.html"> Maintenance</a></li>
-                                    <li> <a href="faq.html"> FAQS</a></li>
+                                    <li> <a href="products.html"> Spare Parts</a></li>
+                                    <li> <a href="faq.html"> Technical Support</a></li>
                                 <li class="has-submenu">
                                     <a href="products.html">Prodcut <i class="fas fa-chevron-down"></i></a>
                                     <!-- Submenu -->
@@ -123,7 +134,7 @@
                                 </li>
                                     
                                 </ul>
-                            
+                            <a class="btn-down" href="#" download=""><i class="fa-solid fa-file-pdf"></i> Download portfolio </a>
                             </div> <!-- header horizontal menu -->
                         </div>
                     </div> <!-- row -->
@@ -144,7 +155,7 @@
                         <div class="col-sm-4 col-5">
                             <div class="mobile-logo text-center">
                                 <a href="./index.html">
-                                    <img src="./assets/img/llogo.PNG" alt="Logo">
+                                    <img src="./assets/img/logo.PNG" alt="Logo">
                                 </a>
                             </div> <!-- mobile logo -->
                         </div>
@@ -168,7 +179,7 @@
                                         </div>
                                     </li>
                                     <li class="header-cart">
-                                        <a href="cart.html">
+                                        <a href="https://treecorefurniture.com/ar/carts">
                                             <i class="fas fa-shopping-cart"></i>
                                             <span>0</span>
                                         </a>
@@ -253,12 +264,13 @@
                         <li><a href="single-product.html">cnc</a></li>  
                     </ul>
                 </li>  
-                    <li><a href="./contact.html"> Contact Us </a></li>
-                    <li><a href="./faq.html"> FAQS </a></li>
+                <li><a href="./service.html"> service </a></li>
+                <li><a href="./Maintenance.html"> Maintenance </a></li>
+                <li><a href="./single-product.html"> Spare Parts </a></li>
+                    <li><a href="./faq.html"> Technical Support  </a></li>
+                    <li><a href="./contact.html"> Contact Us  </a></li>
                 </ul>
-            </li>  
-            
-        </ul>
+
 
                 <!-- menu content -->
             </div> <!-- mobile main menu -->

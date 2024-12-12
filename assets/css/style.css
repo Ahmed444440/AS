@@ -2097,6 +2097,9 @@ only screen and (min-width: 992px) and (max-width: 1199px) {
     transform: translateY(0) scale(2);
     object-fit: contain;
     margin-top: 4px;
+    /* margin-left: 12px; */
+    /* display: block; */
+    margin-right: 39px;
 }
 
 .header-widget-group {
@@ -2494,7 +2497,7 @@ button[type="submit"] {
 .onhover-dropdown {
     position: relative;
     cursor: pointer;
-    margin-right: 21px;
+    margin-right: 130px;
     width: 100%;
 }
 
@@ -3046,6 +3049,7 @@ header .cart-btn .btn {
     justify-content: center;
     align-items: center;
     padding: 0px;
+    
 }
 
 .prod-item2 .cart-icon-list i span {
@@ -7687,4 +7691,18 @@ li.single-cart-product .cart-product-delete-btn i {
 .form-control {
     padding: 10px;
     margin-top: 10px;
+}
+.btn-down {
+    border: 1px solid #f15b28;
+    padding: 10px;
+    border-radius: 20px;
+    color: #fff;
+    background-color:#f15b28 ;
+}
+.btn-down i {
+    font-size: 20px;
+    margin-left: 10px;
+}
+.btn-down:hover{
+    color: #fff;
 }
