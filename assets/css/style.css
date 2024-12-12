@@ -170,8 +170,8 @@ button:focus {
 }
 
 .header-menu-nav .menu-nav li::before {
-    position: absolute;
-    content: "|";
+    /* position: absolute; */
+    /* content: "|"; */
     top: 7px;
     right: -11px;
     line-height: 13px;
@@ -451,8 +451,8 @@ button:focus {
 (max-width: 767px) {
     .header-search {
         width: 100%;
-        margin-top: 30px;
-        padding-bottom: 0px !important;
+        /* margin-top: 30px; */
+        padding-bottom: 15px !important;
     }
 
     .header-search .nice-select .list {
@@ -561,7 +561,7 @@ button:focus {
 }
 
 .header-search input {
-    padding: 10px 180px 10px 60px;
+    /* padding: 10px 180px 10px 60px; */
     width: 100%;
     height: 50px;
     font-size: 16px;
@@ -1667,7 +1667,7 @@ only screen and (min-width: 992px) and (max-width: 1199px) {
 }
 
 .mobile-nav .header-search {
-    margin-left: 0px;
+    /* margin-left: 0px; */
     padding-bottom: 15px;
 }
 
@@ -2925,7 +2925,7 @@ header .cart-btn .btn {
 }
 
 .products_cards_2 {
-    padding-top: 30px;
+    /* padding-top: 30px; */
 }
 
 .prod-card {
@@ -5487,7 +5487,7 @@ table tfoot tr th {
 
 .about-feature-img img {
     border-radius: 10px;
-    box-shadow: 20px 0px 68px -27px;
+    /* box-shadow: 20px 0px 68px -27px; */
     background-color: rgb(255, 255, 255);
 }
 
@@ -7683,4 +7683,8 @@ li.single-cart-product .cart-product-delete-btn i {
 .accordion-button::after {
     position: absolute;
     left: 25px;
+}
+.form-control {
+    padding: 10px;
+    margin-top: 10px;
 }
