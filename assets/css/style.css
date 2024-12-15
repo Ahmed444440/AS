@@ -7706,3 +7706,52 @@ li.single-cart-product .cart-product-delete-btn i {
 .btn-down:hover{
     color: #fff;
 }
+.social-media i{
+    width: 50px;
+    height: 50px;
+    background-color: #f15b28;
+    border-radius: 50%;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    margin-bottom: 10px;
+}
+.social-media {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+.social-media .custom
+{position: fixed;
+display: grid;
+bottom: 16px;
+left: 9px;}
+.partner img {
+    width: 150px;
+    height: 150px;
+}
+/* .custom-service {
+    background-color: white;
+} */
+ .box-shadow {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 7.44px 0.56px;
+ }
+.custom-service img{
+    width: 450px;
+    height: 450px;
+    object-fit: cover;
+}
+.custom-service h1 {
+    margin-top: 50px;
+    margin-left: 50px;
+    color: #000;
+    font-weight: 600;
+}
+.custom-service p {
+    font-size: 22px;
+    margin-top: 10px;
+    margin-left: 50px;
+}
