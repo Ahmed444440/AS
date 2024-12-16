@@ -2416,7 +2416,7 @@ only screen and (min-width: 992px) and (max-width: 1199px) {
 
 .btn:hover,
 .button:hover {
-    background-color: rgb(0, 76, 29);
+    background-color: rgb(241 91 40);
 }
 
 .btn:hover {
@@ -3432,7 +3432,7 @@ header .cart-btn .btn {
 }
 
 .footer-area {
-    background: rgb(0, 2, 17);
+    background: rgb(0, 0, 0);
 }
 
 @media only screen and (max-width: 1400px) {
@@ -7754,4 +7754,218 @@ left: 9px;}
     font-size: 22px;
     margin-top: 10px;
     margin-left: 50px;
+}
+.contact-form .form-group {
+    margin-bottom: 20px;
+    text-align: right;
+  }
+  
+  .contact-form .form-group input[type="text"], .contact-form .form-group input[type="password"], .contact-form .form-group input[type="tel"], .contact-form .form-group input[type="email"], .contact-form .form-group select {
+    position: relative;
+    display: block;
+    width: 100%;
+    line-height: 28px;
+    padding: 10px 25px;
+    color: rgb(136, 136, 136);
+    border: 1px solid #f15b28;
+    height: 60px;
+    font-size: 14px;
+    background: rgb(255, 255, 255);
+    transition: all 300ms ease 0s;
+    text-align: right;
+    direction: rtl;
+    margin-top: 14px;
+    border-radius: 10px;
+  }
+  
+  .contact-form .form-group input[type="text"]:focus, .contact-form .form-group input[type="password"]:focus, .contact-form .form-group input[type="tel"]:focus, .contact-form .form-group input[type="email"]:focus, .contact-form .form-group select:focus, .contact-form .form-group textarea:focus {
+    border-color: rgb(192, 140, 77);
+  }
+  
+  .contact-form .form-group textarea {
+    position: relative;
+    display: block;
+    width: 100%;
+    line-height: 24px;
+    padding: 15px 25px 25px;
+    color: rgb(136, 136, 136);
+    border: 1px solid #f15b28;
+    height: 145px;
+    background: rgb(255, 255, 255);
+    resize: none;
+    font-size: 14px;
+    transition: all 300ms ease 0s;
+    margin-top: 14px;
+  }
+  
+  .contact-form .submit-btn {
+    position: relative;
+    color: rgb(255 255 255);
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 10px;
+    border-radius: 50px;
+    letter-spacing: 1px;
+    background-color: #f15b28;
+    padding: 14px 50px;
+    text-transform: uppercase;
+    transition: all 300ms ease 0s;
+    outline: none;
+    border: 0px;
+  }
+  
+  .bg-blue .contact-form .submit-btn {
+    position: relative;
+    color: rgb(0, 81, 133);
+    font-weight: 800;
+    font-size: 14px;
+    margin-top: 10px;
+    border-radius: 50px;
+    letter-spacing: 0px;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    padding: 14px 50px;
+    text-transform: uppercase;
+    transition: all 300ms ease 0s;
+  }
+  
+  .contact-form .submit-btn:hover {
+    color: rgb(255, 255, 255);
+    border: 0px;
+  }
+  
+  .bg-blue .contact-form .submit-btn:hover {
+    color: rgb(255, 255, 255);
+  }
+  
+  .contact-form input.error, .contact-form select.error, .contact-form textarea.error {
+    border-color: rgb(255, 0, 0) !important;
+  }
+  
+  .contact-form label.error {
+    display: block;
+    line-height: 24px;
+    padding: 5px 0px 0px;
+    margin: 0px;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: rgb(255, 0, 0);
+    font-weight: 500;
+  }
+  .upload-area {
+    /* width: 100%; */
+    background-color: var(--clr-white);
+    box-shadow: 0 10px 60px rgb(218, 229, 255);
+    border: 2px solid var(--clr-light-blue);
+    border-radius: 5px;
+    padding: 2rem 1.875rem 5rem 1.875rem;
+    /* margin: 0.625rem; */
+    text-align: center;
+  }
+  .mission_vision_area .card-title {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+  
+  .mission_vision_area .card-text {
+    font-size: 15px;
+    color: grey;
+    line-height: 2;
+    margin: revert;
+  }
+  .card-img-top {
+    height: 250px;
+  }
+  .wrappers{
+    --_gap: .5rem;
+    --_offset: 10%;
+    --_offset-1: calc(var(--_offset) * 1);
+    --_offset-2: calc(var(--_offset) * 2);
+    --_offset-3: calc(var(--_offset) * 3);
+    --_offset-7: calc(var(--_offset) * 7);
+    --_offset-8: calc(var(--_offset) * 8);
+    --_offset-9: calc(var(--_offset) * 9);
+      
+    width: 100%;
+    margin: 2rem auto;
+    color: white;
+    font-family: system-ui;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0 var(--_gap);
+    pointer-events: none;
+    transform-style: preserve-3d;
+  }
+  .wrappers > div{
+    position: relative;
+    pointer-events: auto;
+    aspect-ratio: 1;
+    transition: scale 500ms ease-in-out, filter 500ms ease-in-out, clip-path 500ms ease-in-out 500ms;
+    clip-path: polygon(var(--_clip-path));
+    transform: translate3d(0,0,0);
+  }
+  .wrappers img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .wrappers > div:nth-child(n+4){
+   margin-top: calc(var(--_offset-3) * -1 + var(--_gap));
+  }
+  /* define clip-path custom properties */
+  .wrappers > div:nth-child(1){ --_clip-path: 0 0, 100% 0, 100% var(--_offset-9), 0 100%;}
+  .wrappers > div:nth-child(2){ --_clip-path: 0 0, 100% 0, 100% var(--_offset-8), 0 var(--_offset-9);}
+  .wrappers > div:nth-child(3){ --_clip-path: 0 0, 100% 0, 100% var(--_offset-7), 0 var(--_offset-8);}
+    
+  .wrappers > div:nth-child(4){ --_clip-path: 0 var(--_offset-3), 100% var(--_offset-2), 100% var(--_offset-8), 0 var(--_offset-7);}
+  .wrappers > div:nth-child(5){ --_clip-path: 0 var(--_offset-2), 100% var(--_offset-1), 100% var(--_offset-9), 0 var(--_offset-8);}
+  .wrappers > div:nth-child(6){ --_clip-path: 0 var(--_offset-1), 100% 0%, 100% 100%, 0 var(--_offset-9);}
+  
+  .wrappers > div:nth-child(7){ --_clip-path: 0 0%, 100% var(--_offset-1), 100% 100%, 0 100%;}
+  .wrappers > div:nth-child(8){ --_clip-path: 0 var(--_offset-1), 100% var(--_offset-2), 100% 100%, 0 100%;}
+  .wrappers > div:nth-child(9){ --_clip-path: 0 var(--_offset-2), 100% var(--_offset-3), 100% 100%, 0 100%;}
+  
+  
+  .wrappers > div:hover{
+    transition: scale 500ms ease-in-out, filter 500ms ease-in-out, clip-path 500ms ease-in-out 500ms;
+    scale: 1.3;
+    --_clip-path: 0 0, 100% 0, 100% 100%, 0 100%;
+    z-index: 100;
+    opacity: 1;
+  }
+  
+  .wrappers:has(:hover) > div:not(:hover){
+    filter: grayscale(1) blur(3px);
+    opacity: .5;
+    scale: 0.7;
+  }
+  .wrappers > div:not(:hover) {
+    /*animation: zIndexHack 1000ms;*/
+  
+  }
+  
+  @keyframes zIndexHack {
+    0%, 100% { z-index: 100; }
+  }
+  
+.multi-collapse {
+    width:300px;
+    height:200px;
+}
+.multi-collapse img {
+    width: 200px;
+    height:50px;
+    margin: auto;
+    margin-bottom: 15px;
+}
+.btn-toggle{
+border: 1px solid #f15b28;
+padding: 0 10px;
+border-radius: 20px;
+color: #fff;
+background-color: #f15b28;
+font-size: 20px;
 }
